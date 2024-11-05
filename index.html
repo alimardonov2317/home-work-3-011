@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>JavaScript</title>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+      <link rel="stylesheet" href="./css/main.min.css" />
+   </head>
+   <body>
+      <!-- Header -->
+      <header class="header">
+         <div class="container">
+            <nav class="navbar">
+               <div class="navbar__logo">
+                  <a href="#">
+                     <img src="./assets/logo-javascript.svg" alt="logo" />
+                     <h3>JavaScript</h3>
+                  </a>
+               </div>
+               <ul class="navbar__collection">
+                  <li class="navbar__item">
+                     <a href="#" class="navbar__link"><span>About</span></a>
+                  </li>
+                  <li class="navbar__item">
+                     <a href="#math" class="navbar__link"
+                        ><span>Math object</span></a
+                     >
+                  </li>
+                  <li class="navbar__item">
+                     <a href="#data" class="navbar__link"
+                        ><span>Data Type</span></a
+                     >
+                  </li>
+                  <li class="navbar__item">
+                     <a href="#condition" class="navbar__link"
+                        ><span>If Alse</span></a
+                     >
+                  </li>
+                  <li class="navbar__item">
+                     <a href="#loop" class="navbar__link"
+                        ><span>Loop</span></a
+                     >
+                  </li>
+               </ul>
+               <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+            </nav>
+         </div>
+      </header>
+      <main>
+         <!-- Hero -->
+         <div class="hero">
+            <div class="container">
+               <div class="hero__wrapper">
+                  <div class="hero__content">
+                     <h1 class="hero__title">JavaScript - Brendan Eich</h1>
+                     <p class="hero__desc">
+                        JavaScript - bu dasturlash tili bo'lib, asason
+                        web-sahifalarda interaktivlik yaratish uchun
+                        ishlatiladi. U 1995 yilda Brendan Eich tomonidan
+                        Netscape kompaniyasida ishlab chiqilgan Dastlab "Mocha"
+                        deb nomlangan,keyin "LiveScript"va nihoyat "JavaScript"
+                        deb o'zgartirildi
+                     </p>
+                  </div>
+                  <div class="hero__image">
+                     <img src="./assets/counder.avif" alt="Brendan" />
+                  </div>
+               </div>
+               <div class="hero__history">
+                  <h2 class="hero__history-title">Tarixi va rivojlanishi</h2>
+                  <p>1995: Brendan Eich JavaScriptni ishlab chiqadi</p>
+                  <p>
+                     1996: JavaScript standartlashtiriladi va ECMAScript nomi
+                     bilan tanilgan,
+                  </p>
+                  <p>
+                     2005-yillar: AJAX texnologiyalari bilan JavaScripning
+                     ommolashuvi boshlanadi.
+                  </p>
+                  <p>
+                     2015: ECMAScript 6 (ES6) chiqariladi, bu JavaScripning
+                     katta yangilanishidir va yangi sintaksis va funksuyalarini
+                     kiritadi.
+                  </p>
+               </div>
+               <div class="hero__use">
+                  <h2 class="hero__use-title">Foydalanish joylari</h2>
+                  <p class="hero__use-desc">
+                     Veb-sahifalar: Interaktiv elementlar yaratish uchun
+                     (tugmalar, formalar, animatsiyalar).
+                  </p>
+                  <p>Server: Node.js orqali server kodlari yozish.</p>
+                  <p>
+                     Mobil Ilovalar: React Native yordamida mobil ilovalar
+                     yaratish.
+                  </p>
+                  <p>
+                     Analitika: Foydalanuvchi harakatlarini kuzatish va tahlil
+                     qilish.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <!-- Math -->
+         <section id="math">
+            <div class="container">
+               <div class="math__text">
+                  <h2>Math Object</h2>
+                  <p>
+                     JavaScript'da Math object matematik funksiyalar va
+                     konstantalar bilan ishlash uchun mo'ljallangan. U veb
+                     ilovalarida ko'plab matematik amallarni bajarishga yordam
+                     beradi. Bu ob'ekt statik bo'lib, Math obyekti bilan
+                     to'g'ridan-to'g'ri ishlanadi.
+                  </p>
+               </div>
+               <div class="math__wrapper">
+                  <div class="math__card">
+                     <h3 class="math__title">Math.PI</h3>
+                     <p class="math__desc">
+                        Pi qiymatini ifodalaydi, taxminan 3.14159 ga teng.
+                     </p>
+                     <div class="math__content">
+                        <p>
+                           <span>console</span><span>.log(Math.</span>PI); //
+                           3.141592653589793
+                        </p>
+                     </div>
+                  </div>
+                  <div class="math__card">
+                     <h3 class="math__title">Math.round()</h3>
+                     <p class="math__desc">
+                        PSonni eng yaqin butunga aylantiradi.
+                     </p>
+                     <div class="math__content">
+                        <p>
+                           <span>console</span><span>.log(Math.round</span
+                           ><span>(4.7));</span> // 5
+                        </p>
+                        <p>
+                           <span>console</span><span>.log(Math.round</span
+                           ><span>(4.4));</span> // 4
+                        </p>
+                     </div>
+                  </div>
+                  <div class="math__card">
+                     <h3 class="math__title">Math.ceil()</h3>
+                     <p class="math__desc">
+                        Sonni yuqoriga qarab butunga aylantiradi.
+                     </p>
+                     <div class="math__content">
+                        <p>
+                           <span>console</span><span>.log(Math.ceil</span
+                           ><span>(4.1));</span> // 5
+                        </p>
+                     </div>
+                  </div>
+                  <div class="math__card">
+                     <h3 class="math__title">Math.floor()</h3>
+                     <p class="math__desc">
+                        Sonni pastga qarab butunga aylantiradi.
+                     </p>
+                     <div class="math__content">
+                        <p>
+                           <span>console</span><span>.log(Math.floor</span
+                           ><span>(4.9));</span> // 4
+                        </p>
+                     </div>
+                  </div>
+                  <div class="math__card">
+                     <h3 class="math__title">Math.random()</h3>
+                     <p class="math__desc">
+                        0 va 1 oralig'ida tasodifiy son yaratadi.
+                     </p>
+                     <div class="math__content">
+                        <p>
+                           <span>console</span><span>.log(Math.random</span
+                           ><span>());</span> // 4
+                        </p>
+                     </div>
+                  </div>
+                  <div class="math__card">
+                     <h3 class="math__title">Math.max()</h3>
+                     <p class="math__desc">
+                        Bir nechta argumentlar orasidan eng katta qiymatni
+                        qaytaradi.
+                     </p>
+                     <div class="math__content">
+                        <p>
+                           <span>console</span><span>.log(Math.max</span
+                           ><span>(1, 3, 2));</span> // 3
+                        </p>
+                     </div>
+                  </div>
+                  <div class="math__card">
+                     <h3 class="math__title">Math.min()</h3>
+                     <p class="math__desc">
+                        Bir nechta argumentlar orasidan eng kichik qiymatni
+                        qaytaradi.
+                     </p>
+                     <div class="math__content">
+                        <p>
+                           <span>console</span><span>.log(Math.min</span
+                           ><span>(1, 3, 2));</span> // 1
+                        </p>
+                     </div>
+                  </div>
+                  <div class="math__card">
+                     <h3 class="math__title">Math.pow()</h3>
+                     <p class="math__desc">
+                        Bir sonni ikkinchisiga daraja qilish uchun ishlatiladi.
+                     </p>
+                     <div class="math__content">
+                        <p>
+                           <span>console</span><span>.log(Math.pow</span
+                           ><span>(2, 3));</span> // 8 (2 darajasi 3)
+                        </p>
+                     </div>
+                  </div>
+                  <div class="math__card">
+                     <h3 class="math__title">Math.sqrt()</h3>
+                     <p class="math__desc">
+                        Sonning kvadrat ildizini qaytaradi.
+                     </p>
+                     <div class="math__content">
+                        <p>
+                           <span>console</span><span>.log(Math.sqrt</span
+                           ><span>(16));</span> // 4
+                        </p>
+                     </div>
+                  </div>
+                  <div class="math__card">
+                     <h3 class="math__title">Math.abs()</h3>
+                     <p class="math__desc">
+                        Sonning modulini (musbat qiymat) qaytaradi.
+                     </p>
+                     <div class="math__content">
+                        <p>
+                           <span>console</span><span>.log(Math.abs</span
+                           ><span>(-5));</span> // 5
+                        </p>
+                     </div>
+                  </div>
+                  <div class="math__card">
+                     <h3 class="math__title">Math.log()</h3>
+                     <p class="math__desc">
+                        Natural logarifmni qaytaradi (sonning tabiiy logarifmi).
+                     </p>
+                     <div class="math__content">
+                        <p>
+                           <span>console</span><span>.log(Math.log</span
+                           ><span>(Math.E));</span> // 1
+                        </p>
+                        <p>
+                           <span>console</span><span>.log(Math.log</span
+                           ><span>(1));</span> // 0
+                        </p>
+                     </div>
+                  </div>
+                  <div class="math__card">
+                     <h3 class="math__title">Math.exp()</h3>
+                     <p class="math__desc">
+                        e ni ko'rsatilgan darajaga ko'taradi.
+                     </p>
+                     <div class="math__content">
+                        <p>
+                           <span>console</span><span>.log(Math.exp</span
+                           ><span>(1));</span> // 2.718281828459045 (e)
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Data -->
+         <section id="data">
+            <div class="container">
+               <h2 class="data__title">Data Types</h2>
+               <div class="data__wrapper">
+                  <div class="data__primitive-wrapper">
+                     <h3 class="data__primitive-title">Primitive</h3>
+                     <div class="data__primitive-content">
+                        <div class="data__primitive-card">
+                           <h4>String</h4>
+                           <p>
+                              String: Matnli ma'lumotlarni ifodalaydi. Ikkita
+                              qo'shtirnoq yoki bitta qo'shtirnoq ichida
+                              yoziladi.
+                           </p>
+                           <p class="data__primitive-console">
+                              <span>let</span> greeting =
+                              <span>"Hello, World!"</span>;
+                           </p>
+                        </div>
+                        <div class="data__primitive-card">
+                           <h4>Number</h4>
+                           <p>
+                              Number: Sonli ma'lumotlarni ifodalaydi. Butun
+                              sonlar va o'nlik sonlarni o'z ichiga oladi.
+                           </p>
+                           <p class="data__primitive-console">
+                              <span>let</span> age = <span>25</span>;
+                           </p>
+                           <p class="data__primitive-console">
+                              <span>let</span> price = <span>19.99</span>;
+                           </p>
+                        </div>
+                        <div class="data__primitive-card">
+                           <h4>Boolean</h4>
+                           <p>
+                              Boolean: True yoki False qiymatlarini ifodalaydi.
+                              Mantiqiy operatsiyalarda qo'llaniladi.
+                           </p>
+                           <p class="data__primitive-console">
+                              <span>let</span> isValid = <span>true</span>;
+                           </p>
+                           <p class="data__primitive-console">
+                              <span>let</span> hasPermission =
+                              <span>false</span>;
+                           </p>
+                        </div>
+                        <div class="data__primitive-card">
+                           <h4>Undefined</h4>
+                           <p>
+                              Undefined: Qiymat aniqlanmagan yoki o'zgaruvchi
+                              e'lon qilinganda lekin qiymat belgilamaganda
+                              bo'ladi.
+                           </p>
+                           <p class="data__primitive-console">
+                              <span>let</span> x;
+                           </p>
+                           <p class="data__primitive-console">
+                              <span>console.log</span>(x); // undefined
+                           </p>
+                        </div>
+                        <div class="data__primitive-card">
+                           <h4>Symbol</h4>
+                           <p>
+                              Symbol: Unikal va o'zgarmas qiymatni ifodalaydi.
+                              Ko'pincha identifier sifatida ishlatiladi.
+                           </p>
+                           <p class="data__primitive-console">
+                              <span>let</span> sym =
+                              <span>Symbol('description')</span>;
+                           </p>
+                        </div>
+                        <div class="data__primitive-card">
+                           <h4>BigInt</h4>
+                           <p>
+                              BigInt: Juda katta butun sonlarni ifodalash uchun
+                              ishlatiladi.
+                           </p>
+                           <p class="data__primitive-console">
+                              <span>let</span> bigNumber =
+                              <span>BigInt (9007199254740991)</span>;
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="data__nonpri-wrapper">
+                     <h3 class="data__primitive-title">Non-Primitive</h3>
+                     <div class="data__primitive-content">
+                        <div class="data__primitive-card">
+                           <h4>Object</h4>
+                           <p class="data__primitive-desc">
+                              Murakkab ma'lumotlarni ifodalaydi va o'z ichiga
+                              ma'lumotlar to'plamini oladi.
+                           </p>
+                           <p class="data__primitive-console">
+                              <span>let</span> person = {<span
+                                 ><br />
+                                 name: "John",<br />
+                                 <span>age: 30,</span> <br />
+                                 <span>isStudent: True</span></span
+                              >};
+                           </p>
+                        </div>
+                        <div class="data__primitive-card">
+                           <h4>Array</h4>
+                           <p>
+                              Array: Qiymatlar ro'yxatini ifodalaydi.
+                              JavaScript'da bu shuningdek ob'ektning bir turi.
+                           </p>
+                           <p class="data__primitive-console">
+                              <span>let</span> colors =
+                              [<span>"red","green","blue"</span>;
+                           </p>
+                        </div>
+                        <div class="data__primitive-card">
+                           <h4>Function</h4>
+                           <p class="data__primitive-desc">
+                              Function: Funksiyalar kodlarni takrorlash yoki
+                              qayta ishlash uchun ishlatiladi.
+                           </p>
+                           <p class="data__primitive-console">
+                              <span>function</span> <span>greet()</span> {
+                              <br />console.log(<span>"Hello world"</span
+                              >);<br />} <br />
+                              <span>greet()</span>;
+                           </p>
+                        </div>
+                        <div class="data__primitive-card">
+                           <h4>Date</h4>
+                           <p>
+                              Date: Sana va vaqt bilan ishlash uchun
+                              ishlatiladi.
+                           </p>
+                           <p class="data__primitive-console">
+                              <span>let</span> today = <span>new</span>
+                              <span>Date();</span>
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Condition -->
+         <section id="condition">
+            <div class="container">
+               <div class="condition__text">
+                  <h2 class="condition__title">IF ELSE</h2>
+                  <p class="condition__desc">
+                     JavaScript'da if...else shartlari mantiqiy operatsiyalarni
+                     bajarishda juda muhim rol o'ynaydi. Bu shartlar kodni
+                     muayyan sharoitlar asosida ishlatish imkonini beradi.
+                  </p>
+               </div>
+               <div class="condition__wrapper">
+                  <div class="condition__card">
+                     <h3 class="condition__card-title">IF</h3>
+                     <p class="condition__card-top">
+                        IF sharti faqatgina shart to'g'ri bo'lganda bajariladi.
+                     </p>
+                     <p class="condition__color">
+                        let age = 18;<br />if (age >= 18) {<br />console.log("Siz
+                        yetuk yoshdasiz.");<br />}
+                     </p>
+                     <p class="condition__info">
+                        Info:Agar age qiymati 18 yoki undan katta bo'lsa, "Siz
+                        yetuk yoshdasiz" xabari chiqariladi.
+                     </p>
+                  </div>
+                  <div class="condition__card">
+                     <h3 class="condition__card-title">ELSE</h3>
+                     <p class="condition__card-top">
+                        IF sharti faqatgina shart to'g'ri bo'lganda bajariladi.
+                     </p>
+                     <p class="condition__color">
+                        let age = 16;<br />if (age >= 18) {<br />console.log("Siz
+                        yetuk yoshdasiz.");<br />} else {<br />console.log("Siz
+                        yetuk yoshda emassiz.");<br />}
+                     </p>
+                     <p class="condition__info">
+                        Info:Agar age qiymati 18 dan kichik bo'lsa, "Siz yetuk
+                        yoshda emassiz" xabari chiqariladi.
+                     </p>
+                  </div>
+                  <div class="condition__card">
+                     <h3 class="condition__card-title">ELSE IF</h3>
+                     <p class="condition__card-top">
+                        ELSE IF sharti qo'shimcha shartlarni tekshirish uchun
+                        ishlatiladi.
+                     </p>
+                     <p class="condition__color">
+                        let age = 20;<br />if (age < 13) {<br />console.log("Siz
+                        bola yoshdasiz."<br />else if (age >= 13 && age < 18)
+                        {<br />
+                        console.log("Siz o'smir yoshdasiz.");<br />} else {<br />console.log("Siz
+                        yetuk yoshdasiz.");<br />
+                     </p>
+                     <p class="condition__info">
+                        Info:Bu yerda turli yosh guruhlari bo'yicha xabarlar
+                        chiqariladi: bola, o'smir yoki yetuk yosh.
+                     </p>
+                  </div>
+                  <div class="condition__card">
+                     <h3 class="condition__card-title">Nested IF Shartlari</h3>
+                     <p class="condition__card-top">
+                        IF shartlari ichida boshqa IF shartlarini ishlatish
+                        mumkin.
+                     </p>
+                     <p class="condition__color">
+                        let age = 25;<br />
+                        if (age >= 18) {<br />
+                        console.log("Siz yetuk yoshdasiz.");<br />
+                        if (age >= 21) {<br />
+                        console.log("Siz ovoz berish huquqiga egasiz.");<br />
+                        } <br />
+                        } else { <br />
+                        console.log("Siz yetuk yoshda emassiz.");<br />
+                        }
+                     </p>
+                     <p class="condition__info">
+                        Info:Bu kodda birinchi if sharti ichida boshqa if sharti
+                        ishlatiladi.
+                     </p>
+                  </div>
+                  <div class="condition__card">
+                     <h3 class="condition__card-title">Ternary Operator</h3>
+                     <p class="condition__card-top">
+                        Yana bir qulay usul – ternary operatori. Bu oddiy
+                        shartlarni yozishda ishlatiladi.
+                     </p>
+                     <p class="condition__color">
+                        let age = 18; <br />
+                        let message = age >= 18 ? "Siz yetuk yoshdasiz." : "Siz
+                        yetuk yoshda emassiz.";<br />
+                        console.log(message);
+                     </p>
+                     <p class="condition__info">
+                        Info:Shart to'g'ri bo'lsa, birinchi xabar, noto'g'ri
+                        bo'lsa, ikkinchi xabar chiqariladi.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Loop -->
+         <section id="loop">
+            <div class="container">
+               <div class="loop__text-wrapper">
+                  <h2 class="loop__text-title">LOOP</h2>
+                  <p class="loop__text-desc">
+                     Loop - bu dasturlashda biror bir kod qatorini takroran
+                     bajarish uchun ishlatiladigan konstruktsiya. Loop yordamida
+                     biz bir xil kodni bir necha marta takrorlashimiz mumkin, bu
+                     esa kodni soddalashtiradi va ortiqcha kod yozishni
+                     kamaytiradi.Looplarning asosiy turlari - for, while, va
+                     do-while looplaridir.
+                  </p>
+               </div>
+               <div class="loop__wrapper">
+                  <div class="loop__card-wrapper">
+                     <h3 class="loop__title">For Loop</h3>
+                     <p class="loop__desc">
+                        For loop - bu belgilangan sonli iteratsiyalar uchun
+                        ishlatiladi, ya'ni oldindan aniq qancha marta
+                        bajarilishi kerakligini bilgan holatlarda foydalanamiz.
+                     </p>
+                     <div class="loop__card">
+                        <p>
+                           for (let i = 0; i < 5; i++) {<br />
+                           console.log(i);<br />
+                           }
+                        </p>
+                     </div>
+                     <div>
+                        <p>Tushuntirish</p>
+                        <p>
+                           let i = 0 - boshlang'ich qiymat (i 0 dan boshlanadi).
+                        </p>
+                        <p>
+                           i < 5 - shart (i 5 dan kichik bo'lganida loop
+                           ishlaydi).
+                        </p>
+                        <p>
+                           i++ - increment (i ning qiymatini har safar 1 ga
+                           oshiradi).
+                        </p>
+                        <p>
+                           console.log(i) - har safar loop ishlaganda i ning
+                           qiymatini chiqaradi.
+                        </p>
+                        <p>Natija: 0, 1, 2, 3, 4.</p>
+                     </div>
+                  </div>
+                  <div class="loop__card-wrapper">
+                     <h3 class="loop__title">While Loop</h3>
+                     <p class="loop__desc">
+                        While loop - bu shart to'g'ri ekan davom etadigan loop. Shart noto'g'ri bo'lganda loop tugaydi.
+                     </p>
+                     <div class="loop__card">
+                        <p>let i = 0;<br>
+                            while (i < 5) {<br>
+                              console.log(i);<br>
+                              i++;<br>
+                            }
+                            </p>
+                     </div>
+                     <div>
+                        <p>Tushuntirish</p>
+                        <p>
+                           let i = 0 - boshlang'ich qiymat (i 0 dan boshlanadi).
+                        </p>
+                        <p>
+                           i < 5 - shart (i 5 dan kichik bo'lganida loop
+                           ishlaydi).
+                        </p>
+                        <p>
+                            console.log(i) - har safar loop ishlaganda i ning qiymatini chiqaradi.
+                        </p>
+                        <p>
+                            i++ - har safar i ning qiymatini 1 ga oshiradi.
+                        </p>
+                        <p>Natija: 0, 1, 2, 3, 4.</p>
+                     </div>
+                  </div>
+                  <div class="loop__card-wrapper">
+                     <h3 class="loop__title">Do-While Loop</h3>
+                     <p class="loop__desc">
+                        Do-while loop - bu kamida bir marta bajariladi, keyin shartni tekshiradi. Agar shart to'g'ri bo'lsa, takrorlanadi.
+                     </p>
+                     <div class="loop__card">
+                        <p>let i = 0;<br>
+                            do {<br>
+                              console.log(i);<br>
+                              i++;<br>
+                            } while (i < 5);
+                            </p>
+                     </div>
+                     <div>
+                        <p>Tushuntirish</p>
+                        <p>
+                           let i = 0 - boshlang'ich qiymat (i 0 dan boshlanadi).
+                        </p>
+                        <p>
+                            console.log(i) - har safar loop ishlaganda i ning qiymatini chiqaradi.
+                        </p>
+                        <p>
+                            i++ - har safar i ning qiymatini 1 ga oshiradi.
+                        </p>
+                        <p>
+                            while (i < 5) - shart (i 5 dan kichik bo'lganida loop davom etadi).
+                        </p>
+                        <p>Natija: 0, 1, 2, 3, 4.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Footer -->
+         <footer class="footer">
+            <div class="container">
+               <nav class="footer__navbar">
+                  <div class="footer__logo">
+                     <a href="#">
+                        <img src="./assets/logo-javascript.svg" alt="logo" />
+                        <h3>JavaScript</h3>
+                     </a>
+                  </div>
+                  <ul class="footer__collection">
+                     <li class="footer__item">
+                        <a href="https:t.me//samandar_2317" target="_blank"
+                           ><i
+                              class="fa-brands fa-telegram"
+                              style="color: #ffd43b"
+                           ></i
+                        ></a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#"
+                           ><i
+                              class="fa-brands fa-instagram"
+                              style="color: #ffd43b"
+                           ></i
+                        ></a>
+                     </li>
+                     <li class="footer__item">
+                        <a href="#"
+                           ><i
+                              class="fa-brands fa-twitter"
+                              style="color: #ffd43b"
+                           ></i
+                        ></a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </footer>
+      </main>
+      <script src="./app.js"></script>
+   </body>
+</html>

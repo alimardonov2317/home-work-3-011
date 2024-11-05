@@ -1,0 +1,56 @@
+.header {
+    background: #231d1d;
+}
+
+.navbar {
+    height: 120px;
+    align-items: center;
+
+    &__logo {
+        flex: 1;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 25px;
+            color: #FFF;
+        }
+
+        img {
+            width: 65px;
+        }
+    }
+
+    display: flex;
+
+    &__collection {
+        display: flex;
+        gap: 40px;
+        color: #FFF;
+    }
+
+    &__item {
+        transition: all .3s ease;
+
+        :hover {
+            color: #f0db4f;
+        }
+    }
+
+    i {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        &__collection {
+            display: none;
+        }
+
+        i {
+            display: block;
+        }
+    }
+}
